@@ -1,0 +1,36 @@
+my_cheating_detection_app/
+│
+├── amplify/
+│   ├── backend/
+│   │   ├── api/
+│   │   │   ├── schema.graphql
+│   │   │   └── resolvers/
+│   │   ├── function/
+│   │   │   ├── analyze_overwatch/
+│   │   │   │   ├── analyze_overwatch.py
+│   │   │   │   └── requirements.txt
+│   │   │   ├── analyze_wow/
+│   │   │   │   ├── analyze_wow.py
+│   │   │   │   └── requirements.txt
+│   │   │   ├── analyze_hearthstone/
+│   │   │   │   ├── analyze_hearthstone.py
+│   │   │   │   └── requirements.txt
+│   │   │   ├── analyze_diablo/
+│   │   │   │   ├── analyze_diablo.py
+│   │   │   │   └── requirements.txt
+│   │   │   └── analyze_starcraft/
+│   │   │       ├── analyze_starcraft.py
+│   │   │       └── requirements.txt
+│   │   └── hosting/
+│   │       └── amplifyhosting/
+│   └── frontend/
+│       ├── public/
+│       │   └── index.html
+│       └── src/
+│           ├── components/
+│           ├── views/
+│           └── app.js
+│
+├── .gitignore
+├── package.json
+└── README.md

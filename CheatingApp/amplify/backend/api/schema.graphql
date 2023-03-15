@@ -1,0 +1,30 @@
+type Player {
+  id: ID!
+  username: String!
+  game: Game!
+  cheater: Boolean
+  suspiciousStats: [SuspiciousStat]
+}
+
+enum Game {
+  OVERWATCH
+  WORLD_OF_WARCRAFT
+  HEARTHSTONE
+  DIABLO
+  STARCRAFT
+}
+
+type SuspiciousStat {
+  id: ID!
+  type: String!
+  description: String!
+}
+
+type Query {
+  getPlayer(id: ID!): Player
+  getPlayersByGame(game: Game!): [Player]
+}
+
+type Mutation {
+  updatePlayerCheaterStatus(id: ID!, cheater: Boolean!): Player
+}
